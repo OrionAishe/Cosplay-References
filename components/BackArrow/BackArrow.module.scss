@@ -1,0 +1,11 @@
+.BackArrow{
+    display: block;
+    position: fixed;
+    top: 100px;
+    left: 30px;
+    transform: scale(2);
+
+    &:hover{
+        cursor: pointer;
+    }
+}

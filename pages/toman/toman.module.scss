@@ -1,0 +1,16 @@
+.Images{
+    display: grid;
+    grid-template-columns: 40% 40%;
+    align-items: center;
+    justify-content: center;
+    column-gap: 5%;
+    row-gap: 5%;
+
+    &__Image{
+        width: 100%;
+
+        &:hover{
+            cursor: pointer;
+        }
+    }
+}

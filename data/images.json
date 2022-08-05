@@ -1,0 +1,41 @@
+[{
+    "toman": [
+        {
+            "img": "/images/baji2.jpg",
+            "id": "1"
+        },
+        {
+            "img": "/images/baji3.png",
+            "id": "2"
+        },
+        {
+            "img": "/images/baji6.png",
+            "id":"3"
+        },
+        {
+            "img": "/images/baji7.jpg",
+            "id":"4"
+        },
+        {
+            "img": "https://quotetheanime.com/wp-content/uploads/2021/06/Baji-2.jpg",
+            "id":"5"
+        }
+    ]
+},
+{
+    "walhalla": 
+        [
+            {
+                "img": "/images/baji1.png",
+                "id": "6"
+            },
+            {
+                "img": "/images/baji4.jpg",
+                "id": "7"
+            },
+            {
+                "img": "/images/baji5.jpg",
+                "id": "8"
+            }
+        ]
+}]
