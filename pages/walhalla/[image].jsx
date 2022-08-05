@@ -21,7 +21,7 @@ export async function getStaticProps(context) {
 }
 
 export async function getStaticPaths() {
-    const data = await getImages();
+    const data = await fetchImages();
     const ids = data.map((images) => images.id);
     const pathsparams = ids.map((id) => ({ params: { image: id } }))
     return {
