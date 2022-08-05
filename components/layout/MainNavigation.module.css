@@ -1,15 +1,13 @@
 .header {
-  width: 100vw;
-  height: 5rem;
+  width: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   background-color: #77002e;
-  padding: 0 10%;
 }
 
 .logo {
-  font-size: 2rem;
+  font-size: clamp(0.5rem, calc(0.5rem + 3vw), 3rem);;
   color: white;
   font-weight: bold;
 }
@@ -19,16 +17,15 @@
   margin: 0;
   padding: 0;
   display: flex;
-  align-items: baseline;
 }
 
-.header li {
-  margin-left: 3rem;
+.header li{
+  margin-left: 1%;
 }
 
 .header a {
   text-decoration: none;
-  font-size: 1.5rem;
+  font-size: clamp(0.4rem, calc(0.3rem + 3vw), 2rem);
   color: #fcb8d2;
 }
 
