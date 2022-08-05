@@ -1,9 +1,5 @@
-import fs from 'fs/promises';
-import path from 'path';
-
-async function getImages() {
+async function fetchImages() {
     let images = [];
-    const response = await JSON.parse(await fs.readFile(path.join(process.cwd(), 'data', 'images.json')));
     const data = await fetch('https://baji-df0b9-default-rtdb.firebaseio.com/images.json')
     const json = await data.json();
     for(const key in json){
@@ -16,4 +12,5 @@ async function getImages() {
     return images;
 }
 
-export default getImages;
+
+export default fetchImages;

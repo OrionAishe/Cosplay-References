@@ -1,5 +1,5 @@
 import BackArrow from '../../components/BackArrow/BackArrow';
-import getImages from '../api/getImages';
+import fetchImages from '../api/fetchImages';
 
 const ImagePage = (props) => {
 
@@ -11,7 +11,7 @@ const ImagePage = (props) => {
 
 export async function getStaticProps(context) {
     const { params } = context;
-    const data = await getImages();
+    const data = await fetchImages();
     const imageurl = data.find((image) => image.id === params.image);
     return {
         props: {

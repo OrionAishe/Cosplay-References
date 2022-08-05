@@ -1,6 +1,6 @@
 import styles from './ImagePage.module.scss';
 import BackArrow from '../../components/BackArrow/BackArrow';
-import getImages from '../api/getImages';
+import fetchImages from '../api/fetchImages';
 
 const ImagePage = (props) => {
 
@@ -12,7 +12,7 @@ const ImagePage = (props) => {
 
 export async function getStaticProps(context) {
     const { params } = context;
-    const data = await getImages();
+    const data = await fetchImages();
     const imageurl = data.find((image) => image.id === params.image);
     return {
         props: {
@@ -22,7 +22,7 @@ export async function getStaticProps(context) {
 }
 
 export async function getStaticPaths() {
-    const data = await getImages();
+    const data = await fetchImages();
     const ids = data.map((images) => images.id);
     const pathsparams = ids.map((id) => ({ params: { image: id } }))
     return {
