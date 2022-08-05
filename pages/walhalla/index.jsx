@@ -22,7 +22,7 @@ export async function getStaticProps() {
         props: {
             data: images
         },
-        revalidate: 300
+        revalidate: 3
     }
 }
 export default Walhalla;
