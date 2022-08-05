@@ -1,6 +1,6 @@
 .Images{
     display: grid;
-    grid-template-columns: 40% 40%;
+    grid-template-columns: 90%;
     align-items: center;
     justify-content: center;
     column-gap: 5%;
@@ -12,5 +12,11 @@
         &:hover{
             cursor: pointer;
         }
+    }
+}
+
+@media (min-width: 780px){
+    .Images{
+        grid-template-columns: 40% 40%;
     }
 }
